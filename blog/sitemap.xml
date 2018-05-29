@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2018-05-29T22:09:36-00:00</lastmod>
+<lastmod>2018-05-30T01:54:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2018-05-29T22:09:36-00:00</lastmod>
+<lastmod>2018-05-30T01:54:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2018-05-29T22:09:36-00:00</lastmod>
+<lastmod>2018-05-30T01:54:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2018-05-29T22:09:36-00:00</lastmod>
+<lastmod>2018-05-30T01:54:41-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./22_gear3.html</loc>
+<lastmod>2018-05-29T12:03:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -124,7 +131,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/course.html</loc>
-<lastmod>2018-05-28T12:01:00+08:06</lastmod>
+<lastmod>2018-05-29T12:03:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -145,21 +152,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./tag/notes.html</loc>
-<lastmod>2018-05-28T12:01:00+08:06</lastmod>
+<lastmod>2018-05-29T12:03:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/steps.html</loc>
-<lastmod>2018-05-28T12:01:00+08:06</lastmod>
+<lastmod>2018-05-29T12:03:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/samples.html</loc>
-<lastmod>2018-05-28T12:01:00+08:06</lastmod>
+<lastmod>2018-05-29T12:03:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -201,7 +208,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./author/40523122.html</loc>
-<lastmod>2018-05-28T12:01:00+08:06</lastmod>
+<lastmod>2018-05-29T12:03:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

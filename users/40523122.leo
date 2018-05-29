@@ -152,6 +152,7 @@
 <v t="leo.20180116222640.2"><vh>@edit 20171111.md</vh></v>
 <v t="leo.20180116222640.3"><vh>@edit 20171112.md</vh></v>
 <v t="leo.20180116222640.4"><vh>@edit 20171113.md</vh></v>
+<v t="leo.20180530015323.1"><vh>@edit 20171114.md</vh></v>
 </v>
 <v t="yen.20170108171733.3"><vh>@edit ./../README.md</vh></v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>

@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>自選正齒輪 - 40523122的個人作業Blog</title>
+    <title>繪製靜態正齒輪 - 40523122的個人作業Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,13 +14,12 @@
 
         <meta name="author" content="40523122" />
         <meta name="keywords" content="notes,steps,samples" />
-        <meta name="description" content="lalala" />
 
         <meta property="og:site_name" content="40523122的個人作業Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="自選正齒輪"/>
+        <meta property="og:title" content="繪製靜態正齒輪"/>
         <meta property="og:url" content="./22_geer1.html"/>
-        <meta property="og:description" content="lalala"/>
+        <meta property="og:description" content=""/>
         <meta property="article:published_time" content="2018-05-27" />
             <meta property="article:section" content="Course" />
             <meta property="article:tag" content="notes" />
@@ -138,8 +137,8 @@
                 <h1>
                     <a href="./22_geer1.html"
                        rel="bookmark"
-                       title="Permalink to 自選正齒輪">
-                        自選正齒輪
+                       title="Permalink to 繪製靜態正齒輪">
+                        繪製靜態正齒輪
                     </a>
                 </h1>
             </header>
@@ -165,14 +164,12 @@
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>lalala
-</p>
-<!-- 導入 Brython 標準程式庫 -->
+                <!-- PELICAN_END_SUMMARY -->
 
+<h2>1-1 使用 canvas 畫出一個可自選齒數之靜態正齒輪</h2>
+<p><!-- 導入 Brython 標準程式庫 -->
 <script src="../data/Brython-3.3.1/brython.js"></script>
-
-<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
-
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script></p>
 <!-- 啟動 Brython -->
 
 <script>
@@ -182,14 +179,16 @@ brython({debug:1, pythonpath:['./../data/py']});
 }
 </script>
 
-<!-- 以下實際利用  Brython 繪圖-->
-
 <canvas id="onegear" width="800" height="600"></canvas>
+
+<!-- 以下製作 button-->
 
 <div id="onegear_div" width="800" height="20"></div>
 
 <p><input id="n" value="22"></input><br />
 <button id="button">Set Number of Gears</button></p>
+<!-- 以下實際利用  Brython 繪圖-->
+
 <script type="text/python3">
 from browser import document as doc
 import math
@@ -207,7 +206,7 @@ class Spur(object):
         self.ctx.lineTo(x2, y2)
         self.ctx.strokeStyle = fill
         self.ctx.stroke()
-    #
+
     # 定義一個繪正齒輪的繪圖函式
     # midx 為齒輪圓心 x 座標
     # midy 為齒輪圓心 y 座標
@@ -220,8 +219,6 @@ class Spur(object):
         imax = 15
         # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
         self.create_line(midx, midy, midx, midy-rp)
-        # 畫出 rp 圓, 畫圓函式尚未定義
-        #create_oval(midx-rp, midy-rp, midx+rp, midy+rp, width=2)
         # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
         # 模數也就是齒冠大小
         a=2*rp/n
@@ -229,18 +226,12 @@ class Spur(object):
         d=2.5*rp/n
         # ra 為齒輪的外圍半徑
         ra=rp+a
-        # 畫出 ra 圓, 畫圓函式尚未定義
-        #create_oval(midx-ra, midy-ra, midx+ra, midy+ra, width=1)
         # rb 則為齒輪的基圓半徑
         # 基圓為漸開線長齒之基準圓
         rb=rp*math.cos(pa*deg)
-        # 畫出 rb 圓 (基圓), 畫圓函式尚未定義
-        #create_oval(midx-rb, midy-rb, midx+rb, midy+rb, width=1)
         # rd 為齒根圓半徑
         rd=rp-d
         # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        # 畫出 rd 圓 (齒根圓), 畫圓函式尚未定義
-        #create_oval(midx-rd, midy-rd, midx+rd, midy+rd, width=1)
         # dr 則為基圓到齒頂圓半徑分成 imax 段後的每段半徑增量大小
         # 將圓弧分成 imax 段來繪製漸開線
         # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
@@ -323,25 +314,28 @@ def setgearnumber(e):
         n1 = int(doc["n"].value)
     else:
         n1= 22
-
+    # 設定齒輪參數
     x = (canvas.width)/2
     y = (canvas.height)/2
     r = 0.6*(canvas.height/2)
-
-# 壓力角
     pa = 20
+    # 繪出齒輪
     Spur(ctx).Gear(x, y, r, n1, pa, "blue")
+#判定 button
 setgearnumber(True)
 doc['button'].bind('click',setgearnumber)
 </script>
 
-<pre class="brush: python">
+<p></br>
+</br>
+</br></p>
+<h4>程式碼如下:　　　　　<a href="#p1"><font color="#FF00FF">跳過程式碼請點此</font></a><br/></h4>
+<p><pre class="brush: python">
 <!-- 導入 Brython 標準程式庫 -->
-
 <script src="../data/Brython-3.3.1/brython.js"></script>
-<script src="../data/Brython-3.3.1/brython_stdlib.js"></script>
-
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script></p>
 <!-- 啟動 Brython -->
+
 <script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
@@ -349,11 +343,15 @@ brython({debug:1, pythonpath:['./../data/py']});
 }
 </script>
 
-<!-- 以下實際利用  Brython 繪圖-->
 <canvas id="onegear" width="800" height="600"></canvas>
+
+<!-- 以下製作 button-->
+
 <div id="onegear_div" width="800" height="20"></div>
-<input id="n" value="22"></input><br />
-<button id="button">Set Number of Gears</button>
+
+<p><input id="n" value="22"></input><br />
+<button id="button">Set Number of Gears</button></p>
+<!-- 以下實際利用  Brython 繪圖-->
 
 <script type="text/python3">
 from browser import document as doc
@@ -372,7 +370,7 @@ class Spur(object):
         self.ctx.lineTo(x2, y2)
         self.ctx.strokeStyle = fill
         self.ctx.stroke()
-    #
+
     # 定義一個繪正齒輪的繪圖函式
     # midx 為齒輪圓心 x 座標
     # midy 為齒輪圓心 y 座標
@@ -385,8 +383,6 @@ class Spur(object):
         imax = 15
         # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
         self.create_line(midx, midy, midx, midy-rp)
-        # 畫出 rp 圓, 畫圓函式尚未定義
-        #create_oval(midx-rp, midy-rp, midx+rp, midy+rp, width=2)
         # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
         # 模數也就是齒冠大小
         a=2*rp/n
@@ -394,18 +390,12 @@ class Spur(object):
         d=2.5*rp/n
         # ra 為齒輪的外圍半徑
         ra=rp+a
-        # 畫出 ra 圓, 畫圓函式尚未定義
-        #create_oval(midx-ra, midy-ra, midx+ra, midy+ra, width=1)
         # rb 則為齒輪的基圓半徑
         # 基圓為漸開線長齒之基準圓
         rb=rp*math.cos(pa*deg)
-        # 畫出 rb 圓 (基圓), 畫圓函式尚未定義
-        #create_oval(midx-rb, midy-rb, midx+rb, midy+rb, width=1)
         # rd 為齒根圓半徑
         rd=rp-d
         # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
-        # 畫出 rd 圓 (齒根圓), 畫圓函式尚未定義
-        #create_oval(midx-rd, midy-rd, midx+rd, midy+rd, width=1)
         # dr 則為基圓到齒頂圓半徑分成 imax 段後的每段半徑增量大小
         # 將圓弧分成 imax 段來繪製漸開線
         # 當 rd 大於 rb 時, 漸開線並非畫至 rb, 而是 rd
@@ -488,18 +478,259 @@ def setgearnumber(e):
         n1 = int(doc["n"].value)
     else:
         n1= 22
-
+    # 設定齒輪參數
     x = (canvas.width)/2
     y = (canvas.height)/2
     r = 0.6*(canvas.height/2)
-
-# 壓力角
     pa = 20
+    # 繪出齒輪
     Spur(ctx).Gear(x, y, r, n1, pa, "blue")
+#判定 button
 setgearnumber(True)
 doc['button'].bind('click',setgearnumber)
 </script>
-</pre>
+
+<p></pre>
+<a id="p1"></a>
+<br/></p>
+<p><br/>
+<br/></p>
+<h2>1-2 使用事先建立好的 cango 程式庫畫出一個可自選齒數之靜態正齒輪</h2>
+<p><!-- 導入 Brython 標準程式庫 -->
+<script src="../data/Brython-3.3.1/brython.js"></script>
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script></p>
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- Cango 程式庫 -->
+
+<script type="text/javascript" src="../cango/Cango-8v03.js"></script>
+
+<script type="text/javascript" src="../cango/Cango2D-7v01-min.js"></script>
+
+<script type="text/javascript" src="../cango/CangoAxes-1v33.js"></script>
+
+<script type="text/javascript" src="../cango/CangoAnimation-4v01.js"></script>
+
+<script type="text/javascript" src="../cango/gearUtils-05.js"></script>
+
+<canvas id='cango_gear' width='800' height='750'></canvas>
+
+<!-- 以下製作 button-->
+
+<div id="cango_gear_div" width="800" height="20"></div>
+
+<p><input id="cn" value="22"></input><br />
+<button id="cbutton">Set Number of Gears</button></p>
+<script type="text/python">
+# 將 導入的 document 設為 doc 主要原因在於與舊程式碼相容
+from browser import document as doc
+# 由於 Python3 與 Javascript 程式碼已經不再混用, 因此來自 Javascript 的變數, 必須居中透過 window 物件轉換
+from browser import window
+import math
+
+# 主要用來取得畫布大小
+canvas = doc["cango_gear"]
+# 此程式採用 Cango Javascript 程式庫繪圖, 因此無需 ctx
+#ctx = canvas.getContext("2d")
+cango = window.Cango.new
+# 針對變數的轉換, shapeDefs 在 Cango 中資料型別為變數, 可以透過 window 轉換
+shapedefs = window.shapeDefs
+# 目前 Cango 結合 Animation 在 Brython 尚無法運作, 此刻只能繪製靜態圖形
+# in CangoAnimation.js
+#interpolate1 = window.interpolate
+# Cobi 與 createGearTooth 都是 Cango Javascript 程式庫中的物件
+cobj = window.Cobj.new
+creategeartooth = window.createGearTooth.new
+# 經由 Cango 轉換成 Brython 的 cango, 指定將圖畫在 id="cango_gear" 的 canvas 上
+cgo = cango("cango_gear")
+
+######################################
+# 畫正齒輪輪廓
+#####################################
+
+# 以 button 驅動的事件函式
+def draw(e):
+    cgo.clearCanvas()
+    cx = (canvas.width)/2
+    cy = (canvas.height)/2
+    if doc["cn"].value.isdigit():
+        cn1 = int(doc["cn"].value)
+    else:
+        cn1= 22
+# pa 為壓力角
+    pa = 25
+# m 為模數, 根據畫布的寬度, 計算適合的模數大小
+# Module = mm of pitch diameter per tooth
+    m = 0.5*canvas.width/cn1
+# pr 為節圓半徑
+    pr = cn1*m/2 # gear Pitch radius
+# generate gear
+    data = creategeartooth(m, cn1, pa)
+# Brython 程式中的 print 會將資料印在 Browser 的 console 區
+#print(data)
+    gearTooth = cobj(data, "SHAPE", {
+            "fillColor":"#ddd0dd",
+                    "border": True,
+           "strokeColor": "#606060" })
+    gearTooth.rotate(180/cn1) # rotate gear 1/2 tooth to mesh
+# 單齒的齒形資料經過旋轉後, 將資料複製到 gear 物件中
+    gear = gearTooth.dup()
+# gear 為單一齒的輪廓資料
+#cgo.render(gearTooth)
+
+# 利用單齒輪廓旋轉, 產生整個正齒輪外形
+    for i in range(1, cn1):
+    # 將 gearTooth 中的資料複製到 newTooth
+        newTooth = gearTooth.dup()
+    # 配合迴圈, newTooth 的齒形資料進行旋轉, 然後利用 appendPath 方法, 將資料併入 gear
+        newTooth.rotate(360*i/cn1)
+    # appendPath 為 Cango 程式庫中的方法, 第二個變數為 True, 表示要刪除最前頭的 Move to SVG Path 標註符號
+        gear.appendPath(newTooth, True) # trim move command = True
+
+# 建立軸孔
+# add axle hole, hr 為 hole radius
+    hr = 0.6*pr # diameter of gear shaft
+    shaft = cobj(shapedefs.circle(hr), "PATH")
+    shaft.revWinding()
+    gear.appendPath(shaft) # retain the 'moveTo' command for shaft sub path
+
+# render 繪出靜態正齒輪輪廓
+    gear.translate(cx, cy)
+    cgo.render(gear)
+    r = 0.6*(canvas.height/2)
+draw(True)
+doc['cbutton'].bind('click',draw)
+</script>
+
+<p></br>
+</br>
+</br></p>
+<h4>程式碼如下:</h4>
+<p><pre class="brush: python">
+<!-- 導入 Brython 標準程式庫 -->
+<script src="../data/Brython-3.3.1/brython.js"></script>
+<script src="../data/Brython-3.3.1/brython_stdlib.js"></script></p>
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+
+<!-- Cango 程式庫 -->
+
+<script type="text/javascript" src="../cango/Cango-8v03.js"></script>
+
+<script type="text/javascript" src="../cango/Cango2D-7v01-min.js"></script>
+
+<script type="text/javascript" src="../cango/CangoAxes-1v33.js"></script>
+
+<script type="text/javascript" src="../cango/CangoAnimation-4v01.js"></script>
+
+<script type="text/javascript" src="../cango/gearUtils-05.js"></script>
+
+<canvas id='cango_gear' width='800' height='750'></canvas>
+
+<!-- 以下製作 button-->
+
+<div id="cango_gear_div" width="800" height="20"></div>
+
+<p><input id="cn" value="22"></input><br />
+<button id="cbutton">Set Number of Gears</button></p>
+<script type="text/python">
+# 將 導入的 document 設為 doc 主要原因在於與舊程式碼相容
+from browser import document as doc
+# 由於 Python3 與 Javascript 程式碼已經不再混用, 因此來自 Javascript 的變數, 必須居中透過 window 物件轉換
+from browser import window
+import math
+
+# 主要用來取得畫布大小
+canvas = doc["cango_gear"]
+# 此程式採用 Cango Javascript 程式庫繪圖, 因此無需 ctx
+#ctx = canvas.getContext("2d")
+cango = window.Cango.new
+# 針對變數的轉換, shapeDefs 在 Cango 中資料型別為變數, 可以透過 window 轉換
+shapedefs = window.shapeDefs
+# 目前 Cango 結合 Animation 在 Brython 尚無法運作, 此刻只能繪製靜態圖形
+# in CangoAnimation.js
+#interpolate1 = window.interpolate
+# Cobi 與 createGearTooth 都是 Cango Javascript 程式庫中的物件
+cobj = window.Cobj.new
+creategeartooth = window.createGearTooth.new
+# 經由 Cango 轉換成 Brython 的 cango, 指定將圖畫在 id="cango_gear" 的 canvas 上
+cgo = cango("cango_gear")
+
+######################################
+# 畫正齒輪輪廓
+#####################################
+
+# 以 button 驅動的事件函式
+def draw(e):
+    cgo.clearCanvas()
+    cx = (canvas.width)/2
+    cy = (canvas.height)/2
+    if doc["cn"].value.isdigit():
+        cn1 = int(doc["cn"].value)
+    else:
+        cn1= 22
+# pa 為壓力角
+    pa = 25
+# m 為模數, 根據畫布的寬度, 計算適合的模數大小
+# Module = mm of pitch diameter per tooth
+    m = 0.5*canvas.width/cn1
+# pr 為節圓半徑
+    pr = cn1*m/2 # gear Pitch radius
+# generate gear
+    data = creategeartooth(m, cn1, pa)
+# Brython 程式中的 print 會將資料印在 Browser 的 console 區
+#print(data)
+    gearTooth = cobj(data, "SHAPE", {
+            "fillColor":"#ddd0dd",
+                    "border": True,
+           "strokeColor": "#606060" })
+    gearTooth.rotate(180/cn1) # rotate gear 1/2 tooth to mesh
+# 單齒的齒形資料經過旋轉後, 將資料複製到 gear 物件中
+    gear = gearTooth.dup()
+# gear 為單一齒的輪廓資料
+#cgo.render(gearTooth)
+
+# 利用單齒輪廓旋轉, 產生整個正齒輪外形
+    for i in range(1, cn1):
+    # 將 gearTooth 中的資料複製到 newTooth
+        newTooth = gearTooth.dup()
+    # 配合迴圈, newTooth 的齒形資料進行旋轉, 然後利用 appendPath 方法, 將資料併入 gear
+        newTooth.rotate(360*i/cn1)
+    # appendPath 為 Cango 程式庫中的方法, 第二個變數為 True, 表示要刪除最前頭的 Move to SVG Path 標註符號
+        gear.appendPath(newTooth, True) # trim move command = True
+
+# 建立軸孔
+# add axle hole, hr 為 hole radius
+    hr = 0.6*pr # diameter of gear shaft
+    shaft = cobj(shapedefs.circle(hr), "PATH")
+    shaft.revWinding()
+    gear.appendPath(shaft) # retain the 'moveTo' command for shaft sub path
+
+# render 繪出靜態正齒輪輪廓
+    gear.translate(cx, cy)
+    cgo.render(gear)
+    r = 0.6*(canvas.height/2)
+draw(True)
+doc['cbutton'].bind('click',draw)
+</script>
+
+<p></pre>
+<a id="p2"></a>
+<br/>
+<br/></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -515,13 +746,18 @@ doc['button'].bind('click',setgearnumber)
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="./22_gear3.html">
+                            繪製組合轉動正齒輪
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./22_geer2.html">
-                            自選 cango 齒輪
+                            繪製靜態組合正齒輪
                         </a>
                     </li>
                     <li class="list-group-item">
                         <a href="./22_geer1.html">
-                            自選正齒輪
+                            繪製靜態正齒輪
                         </a>
                     </li>
                     <li class="list-group-item">
@@ -532,11 +768,6 @@ doc['button'].bind('click',setgearnumber)
                     <li class="list-group-item">
                         <a href="./Course_W15_22.html">
                             W15課後整理
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./40523122-midexam.html">
-                            CADP期中報告
                         </a>
                     </li>
                 </ul>
