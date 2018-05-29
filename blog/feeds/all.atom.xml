@@ -406,7 +406,7 @@ setgearnumber(True)
 doc['button'].bind('click',setgearnumber)
 &lt;/script&gt;
 
-&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>繪製靜態組合正齒輪</title><link href="./22_geer2.html" rel="alternate"></link><published>2018-05-28T12:01:00+08:00</published><updated>2018-05-28T12:01:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-28:./22_geer2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>繪製靜態組合正齒輪</title><link href="./22_gear2.html" rel="alternate"></link><published>2018-05-28T12:01:00+08:00</published><updated>2018-05-28T12:01:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-28:./22_gear2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;2-1 使用 canvas 畫出一個可自選齒數並組合之靜態正齒輪&lt;/h2&gt;
 &lt;p&gt;&lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -1189,7 +1189,7 @@ set1(True)
 doc['rcbutton'].bind('click',set1)
 &lt;/script&gt;
 
-&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>繪製靜態正齒輪</title><link href="./22_geer1.html" rel="alternate"></link><published>2018-05-27T12:00:00+08:00</published><updated>2018-05-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-27:./22_geer1.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>繪製靜態正齒輪</title><link href="./22_gear1.html" rel="alternate"></link><published>2018-05-27T12:00:00+08:00</published><updated>2018-05-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-27:./22_gear1.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;1-1 使用 canvas 畫出一個可自選齒數之靜態正齒輪&lt;/h2&gt;
 &lt;p&gt;&lt;!-- 導入 Brython 標準程式庫 --&gt;

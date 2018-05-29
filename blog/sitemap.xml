@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2018-05-30T01:54:41-00:00</lastmod>
+<lastmod>2018-05-30T01:59:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2018-05-30T01:54:41-00:00</lastmod>
+<lastmod>2018-05-30T01:59:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2018-05-30T01:54:41-00:00</lastmod>
+<lastmod>2018-05-30T01:59:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2018-05-30T01:54:41-00:00</lastmod>
+<lastmod>2018-05-30T01:59:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -39,14 +39,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./22_geer2.html</loc>
+<loc>./22_gear2.html</loc>
 <lastmod>2018-05-28T12:01:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./22_geer1.html</loc>
+<loc>./22_gear1.html</loc>
 <lastmod>2018-05-27T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
