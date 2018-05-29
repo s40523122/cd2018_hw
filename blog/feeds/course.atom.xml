@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>40523122的個人作業Blog - Course</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2018-05-28T12:01:00+08:00</updated><entry><title>自選 cango 齒輪</title><link href="./22_geer2.html" rel="alternate"></link><published>2018-05-28T12:01:00+08:00</published><updated>2018-05-28T12:01:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-28:./22_geer2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>40523122的個人作業Blog - Course</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/" rel="alternate"></link><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://cadpa.kmol.info/40523122/doc/trunk/blog/</id><updated>2018-05-28T12:01:00+08:00</updated><entry><title>自選 cango 齒輪</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/22_geer2.html" rel="alternate"></link><published>2018-05-28T12:01:00+08:00</published><updated>2018-05-28T12:01:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2018-05-28:/40523122/doc/trunk/blog/22_geer2.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
@@ -226,7 +226,7 @@ def setgearnumber(e):
 setgearnumber(True)
 doc['button'].bind('click',setgearnumber)
 &lt;/script&gt;
-&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>自選正齒輪</title><link href="./22_geer1.html" rel="alternate"></link><published>2018-05-27T12:00:00+08:00</published><updated>2018-05-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2018-05-27:./22_geer1.html</id><summary type="html">&lt;p&gt;lalala
+&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>自選正齒輪</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/22_geer1.html" rel="alternate"></link><published>2018-05-27T12:00:00+08:00</published><updated>2018-05-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2018-05-27:/40523122/doc/trunk/blog/22_geer1.html</id><summary type="html">&lt;p&gt;lalala
 </summary><content type="html">&lt;p&gt;lalala
 &lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -561,7 +561,7 @@ def setgearnumber(e):
 setgearnumber(True)
 doc['button'].bind('click',setgearnumber)
 &lt;/script&gt;
-&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W16課後整理</title><link href="./Course_W16_22.html" rel="alternate"></link><published>2017-10-28T12:00:00+08:00</published><updated>2017-10-28T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-10-28:./Course_W16_22.html</id><summary type="html">&lt;p&gt;附上小組軌道成果
+&lt;/pre&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W16課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W16_22.html" rel="alternate"></link><published>2017-10-28T12:00:00+08:00</published><updated>2017-10-28T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-10-28:/40523122/doc/trunk/blog/Course_W16_22.html</id><summary type="html">&lt;p&gt;附上小組軌道成果
 </summary><content type="html">&lt;p&gt;附上小組軌道成果
 &lt;/p&gt;
 &lt;hr&gt;
@@ -581,7 +581,7 @@ doc['button'].bind('click',setgearnumber)
 　　因為我們一開始就選擇了較複雜的機構，所以繪製起來相對是困難一點，但經過大家分工腦力激盪後，這是我們的一點小成果，只不過為了要符合學長說列印時底板只能用木板，所以又改了一次版 ，是過程中比較麻煩的一件事，但這也是因為我們沒先事先問清楚，下次應該先注意。&lt;br/&gt;
 　　為了使中間的往復機構成功，過程中參考了不少機構，最後終於回想起高中時曾經教過的卡氏圓才成功完成，剛完成的瞬間真的只有"爽"能形容。&lt;br/&gt;
 　　附上成功模擬時的gif圖檔:&lt;br/&gt;
-&lt;img src="./../pictures/line/10.gif" width="800"&gt; &lt;br/&gt;&lt;br/&gt;&lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W15課後整理</title><link href="./Course_W15_22.html" rel="alternate"></link><published>2017-10-27T12:00:00+08:00</published><updated>2017-10-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-10-27:./Course_W15_22.html</id><summary type="html">&lt;p&gt;這禮拜我們小組開始討論軌道抬球機構，附上過程圖片。&lt;br&gt;
+&lt;img src="./../pictures/line/10.gif" width="800"&gt; &lt;br/&gt;&lt;br/&gt;&lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W15課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W15_22.html" rel="alternate"></link><published>2017-10-27T12:00:00+08:00</published><updated>2017-10-27T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-10-27:/40523122/doc/trunk/blog/Course_W15_22.html</id><summary type="html">&lt;p&gt;這禮拜我們小組開始討論軌道抬球機構，附上過程圖片。&lt;br&gt;
  </summary><content type="html">&lt;p&gt;這禮拜我們小組開始討論軌道抬球機構，附上過程圖片。&lt;br&gt;
  &lt;/p&gt;
 &lt;hr&gt;
@@ -596,7 +596,7 @@ doc['button'].bind('click',setgearnumber)
  &lt;img src="./../pictures/line/7.jpg" width="800"&gt; &lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;h2&gt;心得&lt;/h2&gt;
-　　一開始覺得我們太貪心了，把目標設的太大，導致機構太難，而造成繪製困難，經過幾次討論後小組慢慢有共識了。&lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W5課後整理</title><link href="./Course_W5_22.html" rel="alternate"></link><published>2017-10-12T12:00:00+08:00</published><updated>2017-10-12T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-10-12:./Course_W5_22.html</id><summary type="html">&lt;p&gt;今天是第五堂課，學習 SolveSpace 也已經三禮拜了，慢慢地比較熟悉軟體操作了。上堂課完成了使用 SolveSpace 繪製 &lt;font color="#0066FF"&gt;&lt;a href="https://mde1a1.kmol.info/2017fall/raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44"&gt;Nutcracker&lt;/a&gt; &lt;/font&gt; 的八個零件，並使用限制條件組合成可做動之機構。今天的主要內容為將已繪製完成的 .stl 檔顯示在網誌中，使之可以做簡單的 3D 檢視。
+　　一開始覺得我們太貪心了，把目標設的太大，導致機構太難，而造成繪製困難，經過幾次討論後小組慢慢有共識了。&lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W5課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W5_22.html" rel="alternate"></link><published>2017-10-12T12:00:00+08:00</published><updated>2017-10-12T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-10-12:/40523122/doc/trunk/blog/Course_W5_22.html</id><summary type="html">&lt;p&gt;今天是第五堂課，學習 SolveSpace 也已經三禮拜了，慢慢地比較熟悉軟體操作了。上堂課完成了使用 SolveSpace 繪製 &lt;font color="#0066FF"&gt;&lt;a href="https://mde1a1.kmol.info/2017fall/raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44"&gt;Nutcracker&lt;/a&gt; &lt;/font&gt; 的八個零件，並使用限制條件組合成可做動之機構。今天的主要內容為將已繪製完成的 .stl 檔顯示在網誌中，使之可以做簡單的 3D 檢視。
 </summary><content type="html">&lt;p&gt;今天是第五堂課，學習 SolveSpace 也已經三禮拜了，慢慢地比較熟悉軟體操作了。上堂課完成了使用 SolveSpace 繪製 &lt;font color="#0066FF"&gt;&lt;a href="https://mde1a1.kmol.info/2017fall/raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44"&gt;Nutcracker&lt;/a&gt; &lt;/font&gt; 的八個零件，並使用限制條件組合成可做動之機構。今天的主要內容為將已繪製完成的 .stl 檔顯示在網誌中，使之可以做簡單的 3D 檢視。
 &lt;/p&gt;
 &lt;hr&gt;
@@ -616,7 +616,7 @@ doc['button'].bind('click',setgearnumber)
 &lt;img src="./../pictures/w5-1.PNG" width="260" high="73"/&gt;&lt;br/&gt;
 7. 接下來只要在網誌內容打上
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe src="./../&lt;font color="#FF0088"&gt;name&lt;/font&gt;/viewstl.html?src=&lt;font color="#7700FF"&gt;stl檔案位置&lt;/font&gt;" width="870" height="900"&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-即可於網誌上顯示。&lt;br/&gt; &lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W4課後整理</title><link href="./Course_W4_22.html" rel="alternate"></link><published>2017-10-05T12:00:00+08:00</published><updated>2017-10-05T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-10-05:./Course_W4_22.html</id><summary type="html">&lt;p&gt;第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。&lt;br/&gt; &lt;/p&gt;
+即可於網誌上顯示。&lt;br/&gt; &lt;/p&gt;</content><category term="notes"></category><category term="steps"></category><category term="samples"></category></entry><entry><title>W4課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W4_22.html" rel="alternate"></link><published>2017-10-05T12:00:00+08:00</published><updated>2017-10-05T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-10-05:/40523122/doc/trunk/blog/Course_W4_22.html</id><summary type="html">&lt;p&gt;第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。&lt;br/&gt; &lt;/p&gt;
 </summary><content type="html">&lt;p&gt;第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。&lt;br/&gt; &lt;/p&gt;
 
 
@@ -773,7 +773,7 @@ doc['button'].bind('click',setgearnumber)
 &lt;div align=center style="width: 800"&gt;
 &lt;div style="width: 395; float:left"&gt;&lt;img src="./../pictures/vrep_setting-1.PNG" width="395" hight="305"&gt;&lt;div&gt;圖 (8)&lt;/div&gt;&lt;/div&gt;
 &lt;div style="clear:both"&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;</content><category term="notes"></category><category term="tips"></category></entry><entry><title>W3課後整理</title><link href="./Course_W3_22.html" rel="alternate"></link><published>2017-09-28T12:00:00+08:00</published><updated>2017-09-28T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-09-28:./Course_W3_22.html</id><summary type="html">&lt;p&gt;本堂課是學期第三堂，也是前三周適應期的最後一堂，過了這堂課就要開始這門課的重點了，今天的內容為將前兩周未完成事項完成，並說明接下來的課程所需使用的 SolveSpace 和 Vrep 這兩套軟體，及調整好心態來準備、面對接下來會遇到的問題與工作。&lt;br/&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="notes"></category><category term="tips"></category></entry><entry><title>W3課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W3_22.html" rel="alternate"></link><published>2017-09-28T12:00:00+08:00</published><updated>2017-09-28T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-09-28:/40523122/doc/trunk/blog/Course_W3_22.html</id><summary type="html">&lt;p&gt;本堂課是學期第三堂，也是前三周適應期的最後一堂，過了這堂課就要開始這門課的重點了，今天的內容為將前兩周未完成事項完成，並說明接下來的課程所需使用的 SolveSpace 和 Vrep 這兩套軟體，及調整好心態來準備、面對接下來會遇到的問題與工作。&lt;br/&gt;&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;本堂課是學期第三堂，也是前三周適應期的最後一堂，過了這堂課就要開始這門課的重點了，今天的內容為將前兩周未完成事項完成，並說明接下來的課程所需使用的 SolveSpace 和 Vrep 這兩套軟體，及調整好心態來準備、面對接下來會遇到的問題與工作。&lt;br/&gt;&lt;/p&gt;
 
 
@@ -793,7 +793,7 @@ doc['button'].bind('click',setgearnumber)
 5. 選一線後 G -&amp;gt; 將選取之線轉為建構線 (綠線)&lt;br/&gt;
 6. tab -&amp;gt; 將 Property Browser 關閉 (也就是除了主視窗外旁邊的小視窗)&lt;br/&gt;
 7. 選取一點後 Ctrl + Shift + T -&amp;gt; 將接下來選取之點移動路徑畫出&lt;br/&gt;
-　　&lt;/p&gt;</content><category term="notes"></category><category term="tips"></category></entry><entry><title>W2課後整理</title><link href="./Course_W2_22.html" rel="alternate"></link><published>2017-09-21T12:00:00+08:00</published><updated>2017-09-21T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-09-21:./Course_W2_22.html</id><summary type="html">&lt;p&gt;本堂課是學期第二堂，還在前三周的適應期，所以今天的內容跟第一周內容類似，目的使同學們能更快適應並跟上課程進度。&lt;br/&gt;
+　　&lt;/p&gt;</content><category term="notes"></category><category term="tips"></category></entry><entry><title>W2課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W2_22.html" rel="alternate"></link><published>2017-09-21T12:00:00+08:00</published><updated>2017-09-21T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-09-21:/40523122/doc/trunk/blog/Course_W2_22.html</id><summary type="html">&lt;p&gt;本堂課是學期第二堂，還在前三周的適應期，所以今天的內容跟第一周內容類似，目的使同學們能更快適應並跟上課程進度。&lt;br/&gt;
 今天的內容主要為學習如何進一步管理遠端倉儲。&lt;br/&gt;&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;本堂課是學期第二堂，還在前三周的適應期，所以今天的內容跟第一周內容類似，目的使同學們能更快適應並跟上課程進度。&lt;br/&gt;
 今天的內容主要為學習如何進一步管理遠端倉儲。&lt;br/&gt;&lt;/p&gt;
@@ -815,7 +815,7 @@ SITEURL = '&lt;font color="#00AA00"&gt;url&lt;/font&gt;'&lt;/code&gt;&lt;/pre&gt
 &lt;h3&gt;fossil status 和 fossil delete &lt;/h3&gt;
 　　fossil status 為查看目前所在資料夾檔案狀況的指令，若資料內容出現 missing 表示資料已遭更改刪除，必須以 fossil delete 處理，才能繼續後續之動作。&lt;br/&gt;
 　　fossil delete 範例: 若要刪除 data 內的 sample.py 指令如下
-&lt;pre&gt;&lt;code&gt;fossil delete data/sample.py&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;</content><category term="notes"></category><category term="command"></category></entry><entry><title>W1課後整理</title><link href="./Course_W1_22.html" rel="alternate"></link><published>2017-09-14T12:00:00+08:00</published><updated>2017-09-14T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:None,2017-09-14:./Course_W1_22.html</id><summary type="html">&lt;p&gt;本學期課程為上學期之延伸，使用到上學期所操作的 Fossil SCM 與 Stunnel 。&lt;br/&gt;
+&lt;pre&gt;&lt;code&gt;fossil delete data/sample.py&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;</content><category term="notes"></category><category term="command"></category></entry><entry><title>W1課後整理</title><link href="https://cadpa.kmol.info/40523122/doc/trunk/blog/Course_W1_22.html" rel="alternate"></link><published>2017-09-14T12:00:00+08:00</published><updated>2017-09-14T12:00:00+08:00</updated><author><name>40523122</name></author><id>tag:cadpa.kmol.info,2017-09-14:/40523122/doc/trunk/blog/Course_W1_22.html</id><summary type="html">&lt;p&gt;本學期課程為上學期之延伸，使用到上學期所操作的 Fossil SCM 與 Stunnel 。&lt;br/&gt;
 前三周為適應期，目的使我們練習並更熟悉如何使用課堂工具，以提高接下來工作完成的效率。&lt;br/&gt;
 </summary><content type="html">&lt;p&gt;本學期課程為上學期之延伸，使用到上學期所操作的 Fossil SCM 與 Stunnel 。&lt;br/&gt;
 前三周為適應期，目的使我們練習並更熟悉如何使用課堂工具，以提高接下來工作完成的效率。&lt;br/&gt;
