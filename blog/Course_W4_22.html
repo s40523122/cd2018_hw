@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>W4課後整理 - 40523122的個人作業Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="./Course_W4_22.html">
+
+        <meta name="author" content="40523122" />
+        <meta name="keywords" content="notes,tips" />
+        <meta name="description" content="第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。" />
+
+        <meta property="og:site_name" content="40523122的個人作業Blog" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="W4課後整理"/>
+        <meta property="og:url" content="./Course_W4_22.html"/>
+        <meta property="og:description" content="第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。"/>
+        <meta property="article:published_time" content="2017-10-05" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="notes" />
+            <meta property="article:tag" content="tips" />
+            <meta property="article:author" content="40523122" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="40523122的個人作業Blog ATOM Feed"/>
+
+<script type="text/javascript" src="./../data/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushBash.js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "./../data/syntaxhighlighter/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "./../data/syntaxhighlighter/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+40523122的個人作業Blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./category/course.html">Course</a>
+                        </li>
+                        <li >
+                            <a href="./category/exam.html">Exam</a>
+                        </li>
+                        <li >
+                            <a href="./category/practice.html">Practice</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="./search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./Course_W4_22.html"
+                       rel="bookmark"
+                       title="Permalink to W4課後整理">
+                        W4課後整理
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-10-05T12:00:00+08:00"> 週四 05 十月 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40523122.html"><i class="fa fa-user"></i> 40523122</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/notes.html">notes</a>
+        /
+	<a href="./tag/tips.html">tips</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>第四堂課也正式開始了本學期的內容，今天的內容主要為 SolveSpace 零件繪圖、組合教學，使用 SolveSpace 而不使用 Solidworks 或 Inventor 之類的繪圖軟體的原因為相較其他起來 SolveSpace 檔案容量更小，約只有 6.3 Mb ，雖然功能陽春點，但攜帶方便，更能凸顯出工程師隨處設計之理念。<br/> </p>
+
+
+<hr>
+<p><h2>課程目標</h2>
+　　學習 SolveSpace 的基本繪畫功能，將 <font color="#0066FF"><a href="https://mde1a1.kmol.info/2017fall/raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44">Nutcracker</a> </font> 的 8 個零件繪出，並加以組裝，使之能做出預設之動作，之後使用 File -&gt;  Export Triangle Mesh 轉為 .stl 檔，再使用vrep開啟模擬。   </p>
+<hr>
+<p><h2>課程筆記</h2>
+<h3>SolveSpace 基本功能簡介</h3>
+<div align=center style="width: 800">
+<div style="width: 90; float:left"><img src="./../pictures/basic_area.png" width="85" high="215"><div>圖 (1)</div></div>
+<div align=center style="width: 90; float:left; margin-left: 20px"><img src="./../pictures/limit_area.png" width="83" high="260"><div>圖 (2)</div></div>
+<div align=center style="width: 90; float:left; margin-left: 20px"><img src="./../pictures/feature_area.png" width="85" high="181"><div>圖 (3)</div></div>
+<div style="clear:both"></div>
+</div>
+<div style="clear:left"></div>
+<br/>
+<font size="5">圖 (1) 描述</font><br/>
+<table>
+        <tr>
+            <th><font size="4">左排</font></th>
+            <th><font size="4">描述</font></th>
+            <th><font size="4">右排</font></th>
+            <th><font size="4">描述</font></th>
+        </tr>
+        <tr>
+            <th>直線</th>
+            <th>畫出直線</th>
+            <th>矩形</th>
+            <th>畫出矩形</th>
+        </tr>
+        <tr>
+            <th>圓</th>
+            <th>畫出圓</th>
+            <th>弧</th>
+            <th>選擇起始和終點畫弧</th>
+        </tr>
+        <tr>
+            <th>文字</th>
+            <th>打出文字 (只能英文，文字由 Property Browser 改)</th>
+            <th>導圓角</th>
+            <th>先選一交點後再點選圖示，由交點處導圓角</th>
+        </tr>
+        <tr>
+            <th>曲線</th>
+            <th>畫出曲線</th>
+            <th>點</th>
+            <th>畫出一點</th>
+        </tr>
+        <tr>
+            <th>建構線</th>
+            <th>選取一線，將之轉為建構線 (綠線，輔助用)</th>
+            <th>分割</th>
+            <th>先點選兩線後再點選圖示 (將兩線由交點分割)</th>
+        </tr><br/>
+    </table><br/>
+    <font size="5">圖 (2) 描述</font><br/>
+<table>
+        <tr>
+            <th><font size="4">左排</font></th>
+            <th><font size="4">描述</font></th>
+            <th><font size="4">右排</font></th>
+            <th><font size="4">描述</font></th>
+        </tr>
+        <tr>
+            <th>標註尺寸</th>
+            <th>先選取兩點或一點一線再點選圖示，量取距離，雙擊修改尺寸 (不可選擇兩線)</th>
+            <th>標註角度</th>
+            <th>先選取兩線再點選圖示，量取角度，雙擊修改尺寸</th>
+        </tr>
+        <tr>
+            <th>水平</th>
+            <th>選取一線使之水平，或選取兩點，讓兩點相對水平</th>
+            <th>豎直</th>
+            <th>選取一線使之豎直，或選取兩點，讓兩點相對豎直</th>
+        </tr>
+        <tr>
+            <th>平行</th>
+            <th>選取兩線使之相對平行</th>
+            <th>直角</th>
+            <th>選取兩線使之互相呈直角</th>
+        </tr>
+        <tr>
+            <th>交點</th>
+            <th>選取兩點，使兩點重合，或一點一線，使點置於線上</th>
+            <th>對稱</th>
+            <th>選取兩點一線，使兩點對選擇線 (基準線) 對稱</th>
+        </tr>
+        <tr>
+            <th>等長</th>
+            <th>選取兩線，使兩線等長</th>
+            <th>法線方向固定</th>
+            <th>選擇兩法線，使之為相同方向</th>
+        </tr>
+        <tr>
+            <th>補角</th>
+            <th>選取一角度尺寸，呈現此角度之補角</th>
+            <th>鎖定尺寸</th>
+            <th>選擇一標註尺寸，使之為從動尺寸 (可跟隨移動)</th>
+        </tr>
+    </table><br/>
+    <br/>
+<font size="5">圖 (3) 描述</font><br/>
+<table>
+        <tr>
+            <th><font size="4">左排</font></th>
+            <th><font size="4">描述</font></th>
+            <th><font size="4">右排</font></th>
+            <th><font size="4">描述</font></th>
+        </tr>
+        <tr>
+            <th>伸長</th>
+            <th>伸長填料。伸長除料，由 Property Browser 改 ( solid model as 改 difference )</th>
+            <th>旋轉</th>
+            <th>先選擇一線當基準線後再點選圖示，旋轉填料。旋轉除料，由 Property Browser 改 ( solid model as 改 difference )</th>
+        </tr>
+        <tr>
+            <th>環形陣列</th>
+            <th>先選擇一點再點選圖示，畫面所有圖形以點為圓心環形陣列 (數量由 Property Browser 改)</th>
+            <th>直線陣列</th>
+            <th>點選後畫面所有圖形直線陣列 (數量由 Property Browser 改)</th>
+        </tr>
+        <tr>
+            <th>平面草圖</th>
+            <th>先點選兩點一線後再點選圖示，以兩點一線圍成之面為草圖平面</th>
+            <th>3D 草圖</th>
+            <th>可在空間任意地方畫圖 (線用直線、圓、曲線)</th>
+        </tr>
+        <tr>
+            <th>組合圖檔</th>
+            <th>點選後開啟資料夾，選取所需組合之零件，將之載入目前視圖中以供組合</th>
+            <th></th>
+            <th></th>
+        </tr>     <br>
+    </table><br/>
+<h3>SolveSpace 小技巧</h3>
+1. 欲使一圓心至於一正方形中心時，可先畫一方型後，在任意位置畫上兩點，接著點選一點一邊後按 M ，使點置於邊線中央，如圖 (4)，接著點選圓心和第一點 -&gt; 水平，圓心和第二點 -&gt; 豎直後即可，如圖 (5)。
+<div align=center style="width: 800">
+<div style="width: 305; float:left"><img src="./../pictures/circle_middle-1.PNG" width="299" hight="319"><div>圖 (4)</div></div>
+<div align=center style="width: 305; float:left; margin-left: 20px"><img src="./../pictures/circle_middle-2.PNG" width="295" hight="319"><div>圖 (5)</div></div>
+<div style="clear:both"></div>
+</div>
+2. 欲使圓柱體之頂面能繪製草圖時，可先在未伸長前之草圖畫兩建構線通過圓心至邊線，一條水平，一條豎直，如圖 (6)，即可在伸長後之面有一面(兩線一點)可繪製草圖，如圖 (7)。
+<div align=center style="width: 800">
+<div style="width: 300; float:left"><img src="./../pictures/circle_g-1.PNG" width="300" hight="300"><div>圖 (6)</div></div>
+<div align=center style="width: 300; float:left; margin-left: 20px"><img src="./../pictures/circle_g-2.PNG" width="300" hight="300"><div>圖 (7)</div></div>
+<div style="clear:both"></div>
+</div>
+<br/>
+<h3>Vrep 前置操作</h3>
+1. 開啟後，File -&gt; Import -&gt; Mesh... 開啟檔案 ( .stl ) ，開啟後可選擇比例和方向，確定後即完成檔案置入。<br/>
+2. 接著可使用 Edit -&gt; Grouping/Merging -&gt; Divide selected shapes 將組合件分解成零件。<br/>
+3. 雙擊零件名稱旁的圖示開啟一視窗 圖 (8)，點選 Show dynamic properties dialog ，勾選 Body is respondable -&gt; 零件實體化，勾選 Body is dynamic -&gt; 零件產生重力。
+<div align=center style="width: 800">
+<div style="width: 395; float:left"><img src="./../pictures/vrep_setting-1.PNG" width="395" hight="305"><div>圖 (8)</div></div>
+<div style="clear:both"></div>
+</div></p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./22_geer2.html">
+                            自選 cango 齒輪
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./22_geer1.html">
+                            自選正齒輪
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./Course_W16_22.html">
+                            W16課後整理
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./Course_W15_22.html">
+                            W15課後整理
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40523122-midexam.html">
+                            CADP期中報告
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="./category/course.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Course
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./category/exam.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Exam
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./category/practice.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Practice
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group list-inline tagcloud" id="tags">
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/DandyDev/pelican-bootstrap3/" target="_blank">
+                pelican-bootstrap3
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/getpelican/pelican-plugins" target="_blank">
+                pelican-plugins
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/Tipue/Tipue-Search" target="_blank">
+                Tipue search
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2018 40523122
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- for https://github.com/jsor/lity lightbox video popup -->
+
+<link href="./theme/css/lity.css" rel="stylesheet">
+
+<script src="./theme/js/lity.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
